@@ -16,18 +16,18 @@ const menu = () => {
  const { theme }: any = useTheme();
   const menuOptions = {
     '📜': {
-      marginTop: '1vh',
-      marginLeft: '1vw',
+      marginTop: '2dvh',
+      marginLeft: '1.5dvw',
 
       borderRadius: '0.5ch',
-      height: '85lvh',
-      width: '97.5lvw',
+      height: '85dvh',
+      width: '97dvw',
 
       transition: { duration: 0.75, type: 'tween', ease: [0.76, 0, 0.24, 1] },
     },
     '🗞️': {
-      marginTop: '95lvh',
-      marginLeft: '95lvw',
+      marginTop: '95dvh',
+      marginLeft: '95dvw',
       borderRadius: '0.1ch',
 
       height: '0.5ch',
