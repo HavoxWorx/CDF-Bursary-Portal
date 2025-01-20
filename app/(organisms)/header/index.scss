@@ -1,11 +1,11 @@
 /* === How I want it to look  === */
 header {
   top: 0;
-  left: 2vw;
+  left: 2lvw;
   width: calc(var(--icon-size) + 1ch);
   height: 45lvh;
   align-items: center;
-  padding-top: 3ch;
+  padding-top: 3lvh;
 
   position: fixed;
   z-index: 1;

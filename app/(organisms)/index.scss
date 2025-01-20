@@ -6,6 +6,7 @@
 /* === What I want  === */
 // overall body styling for theme switching between dark and light modes. complimentary with media queries for prefers color scheme.
 body {
+  height: 100lvh;
   /* === How I want it to look  === */
   // &[data-theme]::before {
   //   content: attr(data-theme);
@@ -48,6 +49,6 @@ body {
     }
   }
 
-    /* === How I want it to behave  === */
-    transition: all 500ms;
+  /* === How I want it to behave  === */
+  transition: all 500ms;
 }
