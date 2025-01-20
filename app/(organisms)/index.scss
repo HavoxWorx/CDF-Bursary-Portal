@@ -35,9 +35,9 @@ body {
   }
 
   @media (prefers-color-scheme: dark) {
-    &[data-theme]::before {
-      content: attr(data-theme);
-    }
+    // &[data-theme]::before {
+    //   content: attr(data-theme);
+    // }
     &.light-theme {
       background-color: var(--☀️);
       color: var(--🌑);
