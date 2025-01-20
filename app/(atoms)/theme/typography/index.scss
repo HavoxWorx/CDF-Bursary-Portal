@@ -1,0 +1,112 @@
+/* === What I want  === */
+// Overall typography for the project featuring mainly humanist type fonts and slabs for easier visibility on dashboards and for longer periods on the screen.
+@use './font-imports';
+
+/* === How I want it to look  === */
+:root {
+  // --- Font Families || Typefaces || Fonts --- //
+
+  // Sans Serif
+  --black-sans-ultralight: 'Black Sans ultraLight', sans-serif;
+  --black-sans-light: 'Black Sans Light', sans-serif;
+  --black-sans-regular: 'Black Sans Regular', sans-serif;
+
+  --bronova-regular: 'Bronova Regular', sans-serif;
+  --bronova-bold: 'Bronova Bold', sans-serif;
+
+  // Serif
+  --inglobal-regular: 'Inglobal Regular', serif;
+  --inglobal-italic: 'Inglobal Italic', serif;
+}
+
+/* === How I want it to behave  === */
+:root {
+  // Body Text
+  --body: auto;
+
+  // Display Text
+  --h1: clamp(3.052rem, 1.618vw, 11.089rem);
+  --h2: clamp(2.441rem, 1.618vw, 6.854rem);
+  --h3: clamp(1.953rem, 1.618vw, 4.236rem);
+  --h4: clamp(1.563rem, 1.618vw, 2.618rem);
+  --h5: clamp(1.25rem, 1.618vw, 1.618rem);
+
+  // Functional Text
+  --anchor: clamp(0.8rem, 1.618vw, 0.618rem);
+  --breadcrumbs: clamp(0.8rem, 1.618vw, 0.618rem);
+  --small: clamp(0.8rem, 1.618vw, 0.618rem);
+}
+
+html,
+body {
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
+
+  font-family: var(--inglobal-italic);
+  font-size: var(--body);
+  font-weight: 200;
+  line-height: 1.75;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 2rem 0 1.38rem;
+  line-height: 1.3;
+}
+
+h1 {
+  font-family: var(--bronova-bold);
+  font-size: var(--h1);
+}
+
+h2 {
+  font-family: var(--black-sans-regular);
+  font-size: var(--h2);
+  font-weight: 600;
+}
+
+h3 {
+  font-family: var(--inglobal-italic);
+  font-size: var(--h3);
+  font-weight: 400;
+}
+
+h4 {
+  font-family: var(--inglobal-regular);
+  font-size: var(--h4);
+}
+
+h5 {
+  font-family: var(--bronova-regular);
+  font-size: var(--h5);
+}
+
+h6 {
+  font-family: var(--black-sans-light);
+  font-size: var(--body);
+}
+
+p {
+  font-size: var(--body);
+}
+
+a {
+  font-family: var(--inglobal-italic);
+  font-size: var(--anchor);
+}
+
+strong {
+  font-family: var(--bronova-regular);
+}
+
+i {
+  font-family: var(--inglobal-regular);
+}
+
+sup {
+  font-size: 0.01ch;
+}

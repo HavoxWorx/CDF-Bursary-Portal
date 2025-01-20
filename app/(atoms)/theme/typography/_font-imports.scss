@@ -1,0 +1,66 @@
+/* === What I want  === */
+// Overall font file imports for the project
+
+$fonts-path: '/fonts/';
+
+/* === How I want it to look  === */
+
+@font-face {
+  font-family: 'Black Sans Regular';
+  src: url($fonts-path + 'sans-serif/black-sans/Black Sans Regular.woff')
+    format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Black Sans Light';
+  src: url($fonts-path + 'sans-serif/black-sans/Black Sans Light Regular.woff2')
+    format('woff2');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Black Sans ultraLight';
+  src: url($fonts-path + 'sans-serif/black-sans/blacksansultralightwebfont.otf')
+    format('otf');
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bronova Bold';
+  src: url($fonts-path + 'sans-serif/bronova/Bronova Bold.woff') format('woff2');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Bronova Regular';
+  src: url($fonts-path + 'sans-serif/bronova/Bronova Regular.woff')
+    format('woff2');
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inglobal Regular';
+  src: url($fonts-path + 'serif/Inglobal/inglobal.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inglobal Italic';
+  src: url($fonts-path + 'serif/Inglobal/inglobal Italic.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+}

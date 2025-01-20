@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "../../Assets/Final-1/app/(organisms)/menu/index.tsx", "app/(atoms)/theme/typography/_font-imports.ts"],
   "exclude": ["node_modules"]
 }

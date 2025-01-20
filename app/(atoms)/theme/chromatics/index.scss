@@ -1,0 +1,47 @@
+/* === What I want  === */
+// Overall themeing of the project, brand color / accent, light theme color pallete and dark theme color pallete
+
+:root {
+  /* === How I want it to look  === */
+  // ==================== Brand Identity =====================//
+  // Accent
+
+  /* Variants */
+  --👓: hsla(206, 80%, 40%, 100%); // Applicant Color
+  --🕶️: hsla(206, 80%, 20%, 100%); // Admin Color
+
+  --😎: hsla(206, 80%, 40%, 80%);
+
+  --🌑: hsl(200, 9%, 13%);
+  --☀️: hsl(78, 100%, 92%);
+
+  /* === How I want it to behave  === */
+
+  // Light Theme Color Pallete
+  @media (prefers-color-scheme: light) {
+    // Accent
+    --👓: hsla(206, 80%, 29%, 100%);
+    --🕶️: hsla(206, 80%, 20%, 100%);
+
+    // Light:
+    --☀️: hsl(78, 100%, 92%);
+    --⛅: filter invert(0%) hsl(35, 74%, 95%);
+
+    // Dark
+    --🌑: hsl(200, 9%, 13%);
+  }
+
+  // Dark Theme Color Pallete
+  @media (prefers-color-scheme: dark) {
+    // Accent
+    --👓: hsla(206, 80%, 29%, 100%);
+    --🕶️: hsla(206, 80%, 20%, 100%);
+
+    // Light:
+    --☀️: hsl(78, 100%, 92%);
+    --⛅: filter invert(0%) hsl(35, 74%, 95%);
+
+    // Dark
+    --🌑: hsl(200, 9%, 13%);
+  }
+}

@@ -1,0 +1,21 @@
+/* === How I want it to look  === */
+
+@charset 'utf-8';
+
+@forward './\(atoms\)/';
+@forward './\(molecules\)/';
+@forward './\(organisms\)/';
+@forward './\(templates\)/';
+
+/* === Set Base Icon Size and remove/hide scrollbar  === */
+:root {
+  --icon-size: 2.5ch;
+  --mobile-layout-breakpoint: 768px
+    /* For browsers that support `scrollbar-*` properties */ @supports
+    (scrollbar-width: none) {scrollbar-width: none;} scrollbar-width: none;
+  /* Otherwise, use `::-webkit-scrollbar-*` pseudo-elements */
+  @supports selector(::-webkit-scrollbar) {
+    scrollbar-width: none;
+  }
+}
+/* === Set Base Icon Size and remove/hide scrollbar  === */

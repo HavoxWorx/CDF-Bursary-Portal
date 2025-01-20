@@ -1,0 +1,22 @@
+/* === How I want it to look  === */
+header {
+  top: 0;
+  left: 2vw;
+  width: calc(var(--icon-size) + 1ch);
+  height: 45lvh;
+  align-items: center;
+  padding-top: 3ch;
+
+  position: fixed;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @media screen and (max-width: 768px) {
+    width: 95vw;
+    height: auto;
+    flex-direction: row;
+  }
+}

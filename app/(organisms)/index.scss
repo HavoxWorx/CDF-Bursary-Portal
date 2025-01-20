@@ -1,0 +1,53 @@
+@forward './header';
+@forward './menu';
+@forward './content';
+@forward './footer';
+
+/* === What I want  === */
+// overall body styling for theme switching between dark and light modes. complimentary with media queries for prefers color scheme.
+body {
+  /* === How I want it to look  === */
+  // &[data-theme]::before {
+  //   content: attr(data-theme);
+  // }
+
+  &.light-theme {
+    background-color: var(--☀️);
+    color: var(--🌑);
+  }
+  &.dark-theme {
+    background-color: var(--🌑);
+    color: var(--☀️);
+  }
+
+  @media (prefers-color-scheme: light) {
+    // &[data-theme]::before {
+    //   content: attr(data-theme);
+    // }
+    &.light-theme {
+      background-color: var(--☀️);
+      color: var(--🌑);
+    }
+    &.dark-theme {
+      background-color: var(--🌑);
+      color: var(--☀️);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &[data-theme]::before {
+      content: attr(data-theme);
+    }
+    &.light-theme {
+      background-color: var(--☀️);
+      color: var(--🌑);
+    }
+    &.dark-theme {
+      background-color: var(--🌑);
+      color: var(--☀️);
+    }
+  }
+
+    /* === How I want it to behave  === */
+    transition: all 500ms;
+}

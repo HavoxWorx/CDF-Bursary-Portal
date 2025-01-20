@@ -1,0 +1,110 @@
+/* === How I want it to look  === */
+menu {
+  /* === How I want it to look  === */
+
+  // color
+  background-color: var(--😎);
+  -webkit-backdrop-filter: blur(0.7ch); /* Adjust blur intensity as needed */
+  backdrop-filter: blur(0.2ch);
+
+  // position
+  position: fixed;
+  display: grid;
+  grid-template-areas:
+    'menu-header'
+    'menu-nav'
+    'menu-footer';
+
+  grid-template-rows: 1fr 8fr 1fr;
+
+  .menu-header {
+    grid-area: menu-header;
+  }
+  .menu-navigation {
+    grid-area: menu-nav;
+  }
+  .menu-footer {
+    margin-inline: 1ch;
+    grid-area: menu-footer;
+    display: grid;
+    margin-inline: 1em;
+    justify-content: space-between;
+
+    grid-template-areas: 'theme-toggle socials-toggle account';
+
+    .theme-toggle{
+      // position: absolute;
+      margin-left: 1ch;
+    }
+
+    #socials-toggle {
+      margin-inline-start: 48%;
+      margin-top: 16lvh;
+      grid-area: socials-toggle;
+      position: absolute;
+    }
+  }
+
+  // z-index: 0;
+  // position: fixed;
+  // //   margin: 1ch;
+  // // top: 0.3ch;
+
+  // display: grid;
+  // grid-template-areas:
+  // 'header'
+  // 'nav'
+  // 'footer';
+
+  // nav {
+  //   // width: 96vw;
+  //   // height: 85vh;
+
+  //   // position: relative;
+  //   // z-index: -1;
+
+  //   display: grid;
+  //   // place-content: center;
+
+  //   grid-template-areas:
+  //     'header header header'
+  //     'content content content'
+  //     'theme socials aob';
+  //   // align-content: space-between;
+  //   grid-template-rows: 1fr 5fr 1fr;
+
+  //   @media screen and (max-width: 768px) {
+  //     grid-template-areas:
+  //     '* * *'
+  //     '* * *'
+  //     'theme * *';
+  //   }
+
+  //   //  grid-template-areas:
+
+  //   // height: 100vh;
+  //   // width: calc(var(--icon-size) - 5ch);
+  //   // // align-content: space-between;
+
+  //   // @media screen and (max-width: 768px) {
+  //   //   display: grid;
+  //   //   place-items: center;
+  //   //   grid-template-areas: 'logo spacer menu';
+  //   //   grid-template-columns: 1fr 80vw 1fr;
+  //   //   width: 100vw;
+  //   //   height: calc(var(--icon-size) - 5ch);
+
+  //   background-color: var(--👓);
+  //   -webkit-backdrop-filter: blur(0.7ch); /* Adjust blur intensity as needed */
+  //   backdrop-filter: blur(0.7ch);
+  //   border-radius: 0.3ch;
+
+  //   //     .apple-blur-element {
+
+  //   //   background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+
+  //   //   backdrop-filter: blur(10px); /* Adjust blur intensity as needed */
+
+  //   // }
+  // }
+}

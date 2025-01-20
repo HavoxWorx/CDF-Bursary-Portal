@@ -1,0 +1,24 @@
+/* === How I want it to look  === */
+svg {
+  /* theme */
+  transition: all 500ms;
+  fill: var(--👓);
+
+  &#while-menu-open {
+    fill: var(--☀️);
+  }
+  &[data-theme='while-its-dark-outside'] {
+    fill: var(--☀️);
+  }
+
+  /* size */
+  &.logo {
+    height: calc(var(--icon-size) + 1em);
+    width: calc(var(--icon-size) + 1em);
+    &:hover {
+      transition: all 200ms ease-in-out;
+      height: calc(var(--icon-size) + 1.3em);
+      width: calc(var(--icon-size) + 1.3em);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+#◀️ {
+  cursor: pointer;
+  // position: absolute;
+}
+
+#back-button {
+  position: absolute;
+  cursor: pointer;
+  width: calc(var(--icon-size));
+  height: var(--icon-size);
+  margin-top: 90vh;
+  margin-left: 2ch;
+
+  &:hover{
+    transition: all 200ms ease-in-out;
+      width: calc(var(--icon-size) + 0.5ch);
+  height: calc(var(--icon-size) + 0.5ch);
+  }
+  path {
+    fill: var(--👓);
+    &.when-its-dark-outside {
+      fill: var(--☀️);
+    }
+  }
+}
