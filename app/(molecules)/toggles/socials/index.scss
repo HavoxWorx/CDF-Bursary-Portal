@@ -31,8 +31,8 @@
   &:nth-child(2) {
     position: absolute;
     left: 0;
-    right: -48px;
-    transform: translate(-3ch, -8ch);
+    right: -480px;
+    transform: translate(-5ch, -10ch);
     transition: 1200ms all;
   }
 
@@ -48,7 +48,7 @@
     position: absolute;
     left: 0;
     right: -48px;
-    transform: translate(-3ch, -3.5ch);
+    transform: translate(-1.5ch, -5.5ch);
     transition: 1400ms all;
   }
 
@@ -80,7 +80,7 @@
     position: absolute;
     left: 0;
     right: -48px;
-    transform: translate(0, -5.5ch);
+    transform: translate(-1ch, -11ch);
     transition: 1800ms all;
   }
 
@@ -88,15 +88,15 @@
     position: absolute;
     left: 0;
     right: -48px;
-    transform: translate(0, -4.5ch);
+    transform: translate(-5ch, -1ch);
     transition: 1800ms all;
   }
 }
 
 .😉 {
   figure {
-    width: calc(var(--icon-size));
-    height: calc(var(--icon-size));
+    width: calc(var(--icon-size) + 1ch);
+    height: calc(var(--icon-size) + 1ch);
     background-color: var(--👓);
     // filter: url(#afterGlow); // The AfterGlow  after the svg
 
@@ -147,8 +147,8 @@
 
   figure {
     svg {
-      width: calc(var(--icon-size) - 7ch);
-      height: calc(var(--icon-size) - 7ch);
+      width: calc(var(--icon-size));
+      height: calc(var(--icon-size));
     }
 
     &:hover {

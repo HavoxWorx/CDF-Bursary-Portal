@@ -7,11 +7,10 @@
 
   width: var(--icon-size);
   height: var(--icon-size);
-
   &:hover {
-    width: calc(var(--icon-size) - .6ch);
-    height: calc(var(--icon-size) - .6ch);
     transition: all 200ms ease-in-out;
+    transform: scale(1.1);
+
   }
 
   cursor: pointer;

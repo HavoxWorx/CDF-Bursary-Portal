@@ -34,8 +34,8 @@ const socials = ({ id }: any) => {
           <Image
             src={logo}
             alt="brandMark"
-            height={20}
-            width={20}
+            height={22}
+            width={22}
             // width={500} automatically provided
             // height={500} automatically provided
             // blurDataURL="data:..." automatically provided
@@ -50,8 +50,8 @@ const socials = ({ id }: any) => {
           <Image
             src={tumblr}
             alt="tumblr"
-            height={20}
-            width={20}
+            height={22}
+            width={22}
             // width={500} automatically provided
             // height={500} automatically provided
             // blurDataURL="data:..." automatically provided
@@ -65,8 +65,8 @@ const socials = ({ id }: any) => {
           <Image
             src={facebook}
             alt="facebook"
-            height={20}
-            width={20}
+            height={22}
+            width={22}
             // width={500} automatically provided
             // height={500} automatically provided
             // blurDataURL="data:..." automatically provided
@@ -80,8 +80,8 @@ const socials = ({ id }: any) => {
           <Image
             src={instagram}
             alt="Instagram"
-            width={20} //automatically provided
-            height={20} //automatically provided
+            width={22} //automatically provided
+            height={22} //automatically provided
             // blurDataURL="data:..." //automatically provided
             // placeholder="blur" // Optional blur-up while loading
           />
@@ -93,8 +93,8 @@ const socials = ({ id }: any) => {
           <Image
             src={twitter}
             alt="twitter"
-            width={20} //automatically provided
-            height={20} //automatically provided
+            width={22} //automatically provided
+            height={22} //automatically provided
             // blurDataURL="data:..." //automatically provided
             // placeholder="blur" // Optional blur-up while loading
           />
@@ -106,8 +106,8 @@ const socials = ({ id }: any) => {
           <Image
             src={tiktokDark}
             alt="tiktokDark"
-            width={20} //automatically provided
-            height={20} //automatically provided
+            width={22} //automatically provided
+            height={22} //automatically provided
             // blurDataURL="data:..." //automatically provided
             // placeholder="blur" // Optional blur-up while loading
           />
@@ -119,8 +119,8 @@ const socials = ({ id }: any) => {
           <Image
             src={linkedin}
             alt="linkedin"
-            width={20} //automatically provided
-            height={20} //automatically provided
+            width={22} //automatically provided
+            height={22} //automatically provided
             // blurDataURL="data:..." //automatically provided
             // placeholder="blur" // Optional blur-up while loading
           />
@@ -132,8 +132,8 @@ const socials = ({ id }: any) => {
           <Image
             src={gmail}
             alt="gmail"
-            width={20} //automatically provided
-            height={20} //automatically provided
+            width={22} //automatically provided
+            height={22} //automatically provided
             // blurDataURL="data:..." //automatically provided
             // placeholder="blur" // Optional blur-up while loading
           />
@@ -142,7 +142,7 @@ const socials = ({ id }: any) => {
 
       
       {/* Social Svgs  */}
-      <svg className="goo" xmlns="http://www.w3.org/2000/svg" version="1.1">
+      <svg className="goo" xmlns="http://www.w3.org/2200/svg" version="1.1">
         <defs>
           <filter id="shadowed-goo">
             <feGaussianBlur

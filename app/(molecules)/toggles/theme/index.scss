@@ -92,6 +92,11 @@
       }
     }
   }
+
+  &:hover {
+    transition: all 400ms ease-in-out;
+    transform: scale(1.1);
+  }
 }
 
 /* === How I want it to behave  === */

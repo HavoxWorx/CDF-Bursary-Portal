@@ -17,8 +17,7 @@ svg {
     width: calc(var(--icon-size) + 1em);
     &:hover {
       transition: all 200ms ease-in-out;
-      height: calc(var(--icon-size) + 1.3em);
-      width: calc(var(--icon-size) + 1.3em);
+transform: scale(1.1);
     }
   }
 }
