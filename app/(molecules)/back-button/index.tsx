@@ -5,9 +5,7 @@
 
 // --------- Imports ---------- //
 import { useTheme } from '@/app/(atoms)/utility/component-states';
-import { pre } from 'framer-motion/client';
-import Link from 'next/link';
-import { useRouter, usePathname, useSearchParams } from 'next/navigation';
+import { useRouter, usePathname } from 'next/navigation';
 // --------- Imports ---------- //
 
 // --------- Render ---------- //
@@ -15,11 +13,6 @@ export default function back() {
   const { theme }: any = useTheme();
   const router = useRouter();
   const path = usePathname();
-  const searchParams = useSearchParams();
- 
-
-    const prevPath = usePathname();
-    console.log(searchParams)
 
   const handleBackClick = () => {
     router.back();
