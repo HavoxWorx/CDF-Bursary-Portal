@@ -49,5 +49,5 @@ body {
   }
 
     /* === How I want it to behave  === */
-    transition: all 500ms;
+  & {transition: all 500ms ease-in-out;}  
 }

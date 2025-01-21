@@ -34,7 +34,7 @@ $fonts-path: '/fonts/';
 
 @font-face {
   font-family: 'Bronova Bold';
-  src: url($fonts-path + 'sans-serif/bronova/Bronova Bold.woff') format('woff2');
+  src: url($fonts-path + 'sans-serif/bronova/Bronova Bold.woff') format('woff');
   font-style: normal;
   font-weight: 600;
   font-display: swap;

@@ -1,0 +1,46 @@
+/* === How I want it to look  === */
+
+// .menu-content {
+//   grid-area: menu-content;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   padding: 5ch 5ch 5ch 5ch;
+//   height: 100%;
+//   box-sizing: border-box;
+//   nav {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     padding: 7ch 5ch 5ch 5ch;
+//     height: 100%;
+//     box-sizing: border-box;
+//     &.menu-navigation {
+//       display: flex;
+//       gap: 2ch;
+//       flex-direction: column;
+//       .linkContainer {
+//         perspective: 120px;
+//         perspective-origin: bottom;
+//       }
+//       a {
+//         text-decoration: none;
+//         color: var(--☀️);
+//         font-size: 46px;
+//       }
+//     }
+//     // .footer {
+//     //   display: flex;
+//     //   flex-wrap: wrap;
+//     //   a {
+//     //     width: 50%;
+//     //     margin-top: 2ch;
+//     //     color: var(--☀️);
+//     //   }
+//     // }
+//   }
+// }
+
+.menu-content{
+  grid-area: menu-content;
+}

@@ -12,6 +12,7 @@ import { useTheme, useMenu } from '@/app/(atoms)/utility/component-states';
 import Menu from '@/app/(organisms)/menu';
 import Back from '@/app/(molecules)/back-button';
 import Header from './header';
+import Content from './content';
 
 // --------- Imports ---------- //
 
@@ -26,7 +27,7 @@ export default function body({ children }: { children: React.ReactNode }) {
     >
       <Header />
       <Menu />
-      {children}
+      <Content>{children}</Content>
       <Back />
     </body>
   );

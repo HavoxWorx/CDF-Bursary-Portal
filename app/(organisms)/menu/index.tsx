@@ -5,6 +5,7 @@
 import { useMenu, useTheme } from '@/app/(atoms)/utility/component-states';
 import { AnimatePresence, motion } from 'framer-motion';
 import Theme from '@/app/(molecules)/toggles/theme';
+import Nav from './content';
 import Socials from '@/app/(molecules)/toggles/socials';
 
 // --------- Imports ---------- //
@@ -13,7 +14,7 @@ import Socials from '@/app/(molecules)/toggles/socials';
 /* === How I want it to look  === */
 const menu = () => {
   const { menu }: any = useMenu();
- const { theme }: any = useTheme();
+  const { theme }: any = useTheme();
   const menuOptions = {
     '📜': {
       marginTop: '2dvh',
@@ -42,12 +43,6 @@ const menu = () => {
     },
   };
 
-  // const Footer = () => {
-  //   return (
-
-  //   );
-  // };
-
   return (
     /* === How I want it to behave  === */
     <motion.menu
@@ -56,10 +51,7 @@ const menu = () => {
       variants={menuOptions}
       data-theme={theme ? 'while-its-light-out' : 'while-its-dark-outside'}
     >
-      {/* <AnimatePresence>
-
-        {menu && <Header /> && <Footer />}
-      </AnimatePresence> */}
+      <AnimatePresence>{menu && <Nav />}</AnimatePresence>
       {menu && (
         <footer className="menu-footer">
           <AnimatePresence>

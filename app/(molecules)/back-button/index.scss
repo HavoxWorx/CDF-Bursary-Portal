@@ -6,20 +6,42 @@
 #back-button {
   position: absolute;
   cursor: pointer;
-  width: calc(var(--icon-size));
+  width: calc(var(--icon-size) + 1ch);
   height: var(--icon-size);
   margin-top: 90dvh;
   margin-left: 2.5ch;
 
-  &:hover{
+  &:hover {
     transition: all 200ms ease-in-out;
-      width: calc(var(--icon-size) + 0.5ch);
-  height: calc(var(--icon-size) + 0.5ch);
+    width: calc(var(--icon-size) + 0.5ch);
+    height: calc(var(--icon-size) + 0.5ch);
   }
   path {
     fill: var(--👓);
     &.when-its-dark-outside {
       fill: var(--☀️);
     }
+  }
+}
+
+#back-button-text {
+  margin-top: 89dvh;
+  margin-left: 2.5ch;
+  line-height: 1.5ch;
+}
+
+#back-button-text-extended {
+  // width: fit-content;
+  // line-height: 1.5ch;
+  position: absolute;
+  transform: rotate(-90deg); /* Rotates text 90 degrees clockwise */
+  transform-origin: left; /* Changes the pivot point to the top-left corner */
+  margin-top: 67dvh;
+  margin-left: 3.6ch;
+  h1 {
+    // font-size: 3ch;
+  }
+  sup {
+    font-size: 1.4ch;
   }
 }

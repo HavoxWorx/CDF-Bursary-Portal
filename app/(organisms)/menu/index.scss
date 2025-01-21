@@ -1,43 +1,49 @@
 /* === How I want it to look  === */
+@forward './content/';
+
 menu {
   /* === How I want it to look  === */
 
   // color
   background-color: var(--😎);
   -webkit-backdrop-filter: blur(0.7ch); /* Adjust blur intensity as needed */
-  backdrop-filter: blur(0.2ch);
+  backdrop-filter: blur(0.9ch);
 
   // position
   position: fixed;
   display: grid;
   grid-template-areas:
     'menu-header'
-    'menu-nav'
+    'menu-content'
     'menu-footer';
 
   grid-template-rows: 1fr 8fr 1fr;
 
+  a {
+    font-family: var(--bronova-bold);
+    text-decoration: none;
+    color: var(--☀️);
+    font-size: 3.5ch;
+  }
+
   .menu-header {
     grid-area: menu-header;
   }
-  .menu-navigation {
-    grid-area: menu-nav;
-  }
+
   .menu-footer {
     margin-inline: 1ch;
     grid-area: menu-footer;
     display: grid;
-    margin-inline: 1em;
     justify-content: space-between;
 
     grid-template-areas: 'theme-toggle socials-toggle account';
 
     .theme-toggle {
-      margin-left: 1ch;
+      margin-left: 1.5ch;
     }
 
     #socials-toggle {
-      margin-inline-start: 48%;
+      margin-inline-start: 49%;
       margin-top: 14dvh;
       grid-area: socials-toggle;
       position: absolute;

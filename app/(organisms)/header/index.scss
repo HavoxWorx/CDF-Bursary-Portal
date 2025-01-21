@@ -19,4 +19,9 @@ header {
     height: auto;
     flex-direction: row;
   }
+
+  .breadcrumbs{
+      font-family: var(--inglobal-regular);
+       font-size: var(--h5);
+  }
 }
