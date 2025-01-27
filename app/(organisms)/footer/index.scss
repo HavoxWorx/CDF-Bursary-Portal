@@ -1,5 +1,10 @@
 #main-footer {
   position: sticky;
+    height: fit-content;
+
+    // background-color: var(--😎);
+  -webkit-backdrop-filter: blur(0.7ch); /* Adjust blur intensity as needed */
+  backdrop-filter: blur(0.9ch);
   bottom: 0;
   display: grid;
   width: 95lvw;
@@ -18,7 +23,7 @@
   //   grid-template-columns: 1fr 1fr 1fr;
 
   p {
-    margin: 2ch 0 2ch 0;
+    // margin: 2ch 0 2ch 0;
     font-size: 1.5ch;
   }
   #main-socials-toggle {
