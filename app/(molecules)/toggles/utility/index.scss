@@ -8,8 +8,8 @@
   z-index: 3;
 
   perspective: 0px;
-  width: calc(var(--icon-size) + 1ch);
-  height: calc(var(--icon-size) + 1ch);
+  width: calc(var(--icon-size) + 2ch);
+  height: calc(var(--icon-size) + 2ch);
   position: absolute;
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;

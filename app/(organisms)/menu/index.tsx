@@ -26,7 +26,7 @@ const menu = () => {
       height: '85dvh',
       width: '97dvw',
 
-      transition: { duration: 0.75, type: 'tween', ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 1.2, type: 'tween', ease: [0.76, 0, 0.24, 1] },
     },
     '🗞️': {
       marginTop: '95dvh',
@@ -37,7 +37,7 @@ const menu = () => {
       width: '0.5ch',
 
       transition: {
-        duration: 0.75,
+        duration: 1,
         delay: 0.35,
         type: 'tween',
         ease: [0.76, 0, 0.24, 1],
