@@ -30,7 +30,7 @@ const menu = () => {
     },
     '🗞️': {
       marginTop: '95dvh',
-      marginLeft: '95dvw',
+      marginLeft: '97dvw',
       borderRadius: '0.1ch',
 
       height: '0.5ch',

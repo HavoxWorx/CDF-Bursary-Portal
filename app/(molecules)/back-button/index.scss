@@ -6,11 +6,11 @@
 #back-button {
   grid-area: back;
 
-  // position: absolute;
+  position: absolute;
   cursor: pointer;
   width: calc(var(--icon-size) + 1ch);
   height: var(--icon-size);
-  // margin-top: 90dvh;
+  bottom: 2.5ch;
   // margin-left: 2.5ch;
 
   &:hover {
@@ -40,7 +40,7 @@
   transform: rotate(-90deg); /* Rotates text 90 degrees clockwise */
   transform-origin: left; /* Changes the pivot point to the top-left corner */
   margin-top: -25dvh;
-  margin-left: -1.1ch;
+  // margin-left: -1.1ch;
 
   font-size: 2.4ch;
 

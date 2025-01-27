@@ -21,7 +21,7 @@ export default () => {
     initial: {
       opacity: 0,
       rotateY: 10,
-      translateY: -10,
+      translateY: 20,
       translateX: 0,
     },
     enter: (i: number) => ({
@@ -33,7 +33,7 @@ export default () => {
         duration: 0.65,
         delay: 0.5 + i * 0.1,
         ease: [0.215, 0.61, 0.355, 1],
-        opacity: { duration: 0.35 },
+        // opacity: { duration: 0.35 },
       },
     }),
     exit: {
