@@ -1,0 +1,36 @@
+#main-footer {
+  position: sticky;
+  bottom: 0;
+  display: grid;
+  width: 95lvw;
+  @media screen and (min-width: 768px) {
+    width: 100lvw;
+    // height: auto;
+    // flex-direction: row;
+  }
+
+  align-items: end;
+  grid-template-areas:
+    'current-page socials account'
+    'previous-page copyright copyright';
+
+  //   grid-template-rows: 7ch auto;
+  //   grid-template-columns: 1fr 1fr 1fr;
+
+  p {
+    margin: 2ch 0 2ch 0;
+    font-size: 1.5ch;
+  }
+  #main-socials-toggle {
+    grid-area: socials;
+  }
+  #current-page {
+    grid-area: current-page;
+  }
+  #previous-page {
+    grid-area: previous-page;
+  }
+  #copyright {
+    grid-area: copyright;
+  }
+}

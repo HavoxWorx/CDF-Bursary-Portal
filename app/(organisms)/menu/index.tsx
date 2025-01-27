@@ -4,6 +4,7 @@
 // --------- Imports ---------- //
 import { useMenu, useTheme } from '@/app/(atoms)/utility/component-states';
 import { AnimatePresence, motion } from 'framer-motion';
+import { usePathname } from 'next/navigation';
 import Theme from '@/app/(molecules)/toggles/theme';
 import Nav from './content';
 import Socials from '@/app/(molecules)/toggles/socials';
@@ -15,6 +16,7 @@ import Socials from '@/app/(molecules)/toggles/socials';
 const menu = () => {
   const { menu }: any = useMenu();
   const { theme }: any = useTheme();
+  const path = usePathname();
   const menuOptions = {
     '📜': {
       marginTop: '2dvh',
@@ -43,6 +45,10 @@ const menu = () => {
     },
   };
 
+  const Header = (): any => {
+    return <header className="menu-header">{path}</header>;
+  };
+
   return (
     /* === How I want it to behave  === */
     <motion.menu
@@ -51,13 +57,14 @@ const menu = () => {
       variants={menuOptions}
       data-theme={theme ? 'while-its-light-out' : 'while-its-dark-outside'}
     >
+      <AnimatePresence>{menu && <Header />}</AnimatePresence>
       <AnimatePresence>{menu && <Nav />}</AnimatePresence>
       {menu && (
         <footer className="menu-footer">
           <AnimatePresence>
             <Theme />
           </AnimatePresence>
-          <Socials />
+          <Socials id={'menu'}/>
         </footer>
       )}
     </motion.menu>

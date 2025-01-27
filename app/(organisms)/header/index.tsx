@@ -5,7 +5,7 @@
 import { useTheme, useMenu } from '@/app/(atoms)/utility/component-states';
 import Logo from '@/app/(molecules)/logo';
 import MenuToggle from '@/app/(molecules)/toggles/menu';
-import {  usePathname  } from 'next/navigation';
+
 
 
 // --------- Imports ---------- //
@@ -15,7 +15,7 @@ import {  usePathname  } from 'next/navigation';
 const header = () => {
   const { theme }: any = useTheme();
   const { menu }: any = useMenu();
-    const path = usePathname();
+
 
   return (
     <header
@@ -23,7 +23,6 @@ const header = () => {
       className={menu ? 'while-menu-open' : 'while-menu-closed'}
     >
       <Logo />
-      {menu ? <section className='breadcrumbs'>{path}</section> : null}
       <MenuToggle />
     </header>
   );

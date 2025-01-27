@@ -64,9 +64,60 @@ export default () => {
   return (
     /* === How I want it to behave  === */
     <section className="menu-content">
+      <nav className="main-navigation">
+        <section id="website-nav">
+          {websiteLinks.map((link, i) => {
+            const { title, href } = link;
+            return (
+              <div key={`b_${i}`} className="linkContainer">
+                <motion.nav
+                  custom={i}
+                  variants={perspective}
+                  initial="initial"
+                  animate="enter"
+                  exit="exit"
+                >
+                  <Link
+                    passHref={true}
+                    href={href}
+                    onClick={() => {
+                      toggleMenu(!menu);
+                    }}
+                  >
+                    {title}
+                  </Link>
+                </motion.nav>
+              </div>
+            );
+          })}
+        </section>
 
-      <nav className="menu-navigation">
-        {websiteLinks.map((link, i) => {
+        <section id="dashboards-nav">
+          {' '}
+          {dashboardLinks.map((link, i) => {
+            const { title, href } = link;
+            return (
+              <motion.nav
+                variants={slideIn}
+                custom={i}
+                initial="initial"
+                animate="enter"
+                exit="exit"
+                key={`f_${i}`}
+              >
+                <Link
+                  href={href}
+                  onClick={() => {
+                    toggleMenu(!menu);
+                  }}
+                >
+                  {title}
+                </Link>
+              </motion.nav>
+            );
+          })}{' '}
+        </section>
+        {/* {websiteLinks.map((link, i) => {
           const { title, href } = link;
           return (
             <div key={`b_${i}`} className="linkContainer">
@@ -90,6 +141,7 @@ export default () => {
             </div>
           );
         })}
+          
 
         {dashboardLinks.map((link, i) => {
           const { title, href } = link;
@@ -112,7 +164,7 @@ export default () => {
               </Link>
             </motion.nav>
           );
-        })}
+        })} */}
       </nav>
     </section>
   );

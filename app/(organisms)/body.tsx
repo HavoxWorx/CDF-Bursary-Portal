@@ -10,7 +10,7 @@
 import { useTheme, useMenu } from '@/app/(atoms)/utility/component-states';
 
 import Menu from '@/app/(organisms)/menu';
-import Back from '@/app/(molecules)/back-button';
+import Footer from '@/app/(organisms)/footer';
 import Header from './header';
 import Content from './content';
 
@@ -28,7 +28,7 @@ export default function body({ children }: { children: React.ReactNode }) {
       <Header />
       <Menu />
       <Content>{children}</Content>
-      <Back />
+      <Footer />
     </body>
   );
 }

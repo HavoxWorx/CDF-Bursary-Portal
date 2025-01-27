@@ -21,7 +21,7 @@ const socials = ({ id }: any) => {
   const { socials, toggleSocials }: any = useSocials();
 
   return (
-    <nav id={'socials-toggle'} className={socials ? '😍 🥰' : '😍'}>
+    <nav id={id+'-socials-toggle'} className={socials ? '😍 🥰' : '😍'}>
       <Toggle
         id={'😍'}
         title={'Menu Footer Socials'}

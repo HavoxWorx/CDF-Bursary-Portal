@@ -11,7 +11,9 @@ menu {
 
   // position
   position: fixed;
+  width: 100vw;
   display: grid;
+  place-items: center;
   grid-template-areas:
     'menu-header'
     'menu-content'
@@ -19,15 +21,23 @@ menu {
 
   grid-template-rows: 1fr 8fr 1fr;
 
-  a {
-    font-family: var(--bronova-bold);
-    text-decoration: none;
-    color: var(--☀️);
-    font-size: 3.5ch;
-  }
-
   .menu-header {
     grid-area: menu-header;
+    // justify-content: center;
+    top: -2dvh;
+    left: 6dvw;
+    @media screen and (min-width: 768px) {
+      left: 88dvw;
+      top: -1dvh;
+      line-height: normal;
+    }
+    font-family: var(--inglobal-regular);
+    font-size: var(--h5);
+    color: var(--☀️);
+  }
+
+  .menu-content {
+    grid-area: menu-content;
   }
 
   .menu-footer {
@@ -39,12 +49,14 @@ menu {
     grid-template-areas: 'theme-toggle socials-toggle account';
 
     .theme-toggle {
-      margin-left: 1.5ch;
+      grid-area: theme-toggle;
+      position: fixed;
+      left: 2.5ch;
     }
 
-    #socials-toggle {
-      margin-inline-start: 49%;
-      margin-top: 14dvh;
+    #menu-socials-toggle {
+      // margin-inline-start: 49%;
+      margin-top: 7dvh;
       grid-area: socials-toggle;
       position: absolute;
     }

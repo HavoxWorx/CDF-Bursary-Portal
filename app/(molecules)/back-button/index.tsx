@@ -24,7 +24,8 @@ export default function back() {
       return (
         <>
           <section
-            id={path !== '/' ? 'back-button-text-extended' : 'back-button-text'}
+          id='current-page'
+            className={path !== '/' ? 'back-button-text-extended' : 'back-button-text'}
           >
             <p>
               {' '}

@@ -2,7 +2,7 @@
 header {
   top: 0;
   left: 2lvw;
-  width: calc(var(--icon-size) + 1ch);
+  // width: calc(var(--icon-size) + 1ch);
   height: 45lvh;
   align-items: center;
   padding-top: 3lvh;
@@ -20,8 +20,4 @@ header {
     flex-direction: row;
   }
 
-  .breadcrumbs{
-      font-family: var(--inglobal-regular);
-       font-size: var(--h5);
-  }
 }
