@@ -4,7 +4,7 @@
 }
 
 #back-button {
-        grid-area: back;
+  grid-area: back;
 
   // position: absolute;
   cursor: pointer;
@@ -30,20 +30,37 @@
   // margin-top: 89dvh;
   // margin-left: 2.5ch;
   line-height: 1.5ch;
+  transition: 500ms ease-in-out;
 }
 
 .back-button-text-extended {
   // width: fit-content;
-  // line-height: 1.5ch;
-  // position: absolute;
+  line-height: 1.5ch;
+  position: absolute;
   transform: rotate(-90deg); /* Rotates text 90 degrees clockwise */
   transform-origin: left; /* Changes the pivot point to the top-left corner */
-  // margin-top: 67dvh;
-  // margin-left: 3.6ch;
-  h1 {
-    // font-size: 3ch;
+  margin-top: -25dvh;
+  margin-left: -1.1ch;
+
+  font-size: 2.4ch;
+
+  @media screen and (max-width: 768px) {
+    margin-left: 1.1ch;
+    width: 30ch;
   }
+
   sup {
-    font-size: 1.4ch;
+    font-size: 1.1ch;
   }
+}
+
+#current-page {
+  // color: var(--☀️);
+  transition: 500ms ease-in-out;
+}
+
+
+#current-page-while-menu-is-open {
+  color: var(--☀️);
+  transition: 500ms ease-in-out;
 }
